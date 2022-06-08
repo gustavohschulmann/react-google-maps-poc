@@ -1,4 +1,7 @@
 import React from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import * as MenuActions from "../../../store/actions/menu";
 
 import {
     Container,
@@ -16,44 +19,50 @@ import {
     CrownSimpleIcon,
 } from "./styles";
 
-const SideBar = () => {
+const SideBar = ({ activeMenu, toggleMenu }) => {
     return (
         <Container>
-            <SideBarButton>
-                <InfoIcon />
+            <SideBarButton onClick={() => toggleMenu("INFO")}>
+                <InfoIcon activeMenu={activeMenu === "INFO" ? true : false} />
             </SideBarButton>
-            <SideBarButton>
-                <HouseIcon />
+            <SideBarButton onClick={() => toggleMenu("HOME")}>
+                <HouseIcon activeMenu={activeMenu === "HOME" ? true : false} />
             </SideBarButton>
-            <SideBarButton>
-                <BankIcon />
+            <SideBarButton onClick={() => toggleMenu("BANK")}>
+                <BankIcon activeMenu={activeMenu === "BANK" ? true : false} />
             </SideBarButton>
-            <SideBarButton>
-                <ChartBarIcon />
+            <SideBarButton onClick={() => toggleMenu("CHARTBAR")}>
+                <ChartBarIcon activeMenu={activeMenu === "CHARTBAR" ? true : false} />
             </SideBarButton>
-            <SideBarButton>
-                <ClipboardTextIcon />
+            <SideBarButton onClick={() => toggleMenu("CLIPBOARDTEXT")}>
+                <ClipboardTextIcon activeMenu={activeMenu === "CLIPBOARDTEXT" ? true : false} />
             </SideBarButton>
-            <SideBarButton>
-                <BuildingsIcon />
+            <SideBarButton onClick={() => toggleMenu("BUILDINGS")}>
+                <BuildingsIcon activeMenu={activeMenu === "BUILDINGS" ? true : false} />
             </SideBarButton>
-            <SideBarButton>
-                <MapPinIcon />
+            <SideBarButton onClick={() => toggleMenu("MAP")}>
+                <MapPinIcon activeMenu={activeMenu === "MAP" ? true : false} />
             </SideBarButton>
-            <SideBarButton>
-                <TargetIcon />
+            <SideBarButton onClick={() => toggleMenu("TARGET")}>
+                <TargetIcon activeMenu={activeMenu === "TARGET" ? true : false} />
             </SideBarButton>
-            <SideBarButton>
-                <DropIcon />
+            <SideBarButton onClick={() => toggleMenu("DROP")}>
+                <DropIcon activeMenu={activeMenu === "DROP" ? true : false} />
             </SideBarButton>
-            <SideBarButton>
-                <LeafIcon />
+            <SideBarButton onClick={() => toggleMenu("LEAF")}>
+                <LeafIcon activeMenu={activeMenu === "LEAF" ? true : false} />
             </SideBarButton>
-            <SideBarButton>
-                <CrownSimpleIcon />
+            <SideBarButton onClick={() => toggleMenu("CROWN")}>
+                <CrownSimpleIcon activeMenu={activeMenu === "CROWN" ? true : false} />
             </SideBarButton>
         </Container>
     );
 };
 
-export default SideBar;
+const mapStateToProps = (state) => ({
+    activeMenu: state.menu.activeMenu,
+});
+
+const mapDispatchToProps = (dispatch) => bindActionCreators(MenuActions, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(SideBar);

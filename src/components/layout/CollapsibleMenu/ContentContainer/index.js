@@ -1,0 +1,33 @@
+import React from "react";
+import { connect } from "react-redux";
+import ClipBoardMenu from "../../../../menuPages/ClipBoardMenu";
+import HomeMenu from "../../../../menuPages/HomeMenu";
+import MapMenu from "../../../../menuPages/MapMenu";
+import OtherMenu from "../../../../menuPages/OtherMenu";
+import SearchBar from "../../../ui/SearchBar";
+
+import { Container, SearchBarContainer, MenuContentContainer } from "./styles";
+
+const ContentContainer = ({ activeMenu }) => {
+    return (
+        <Container>
+            <SearchBarContainer>
+                <SearchBar />
+            </SearchBarContainer>
+            <MenuContentContainer>
+                {/* I know that here, for best practices, I could use a different approach
+                 to not be playing with strings values, but I had just a few experience before
+                 with redux, so I didn`t had much time to dive in this time and find a better
+                 solution :) */}
+                {activeMenu === "HOME" && <HomeMenu />}
+                {activeMenu === "CLIPBOARDTEXT" && <ClipBoardMenu />}
+                {activeMenu === "MAP" && <MapMenu />}
+                {activeMenu !== "HOME" && activeMenu !== "CLIPBOARDTEXT" && activeMenu !== "MAP" && <OtherMenu />}
+            </MenuContentContainer>
+        </Container>
+    );
+};
+
+export default connect((state) => ({
+    activeMenu: state.menu.activeMenu,
+}))(ContentContainer);

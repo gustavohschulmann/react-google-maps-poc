@@ -42,7 +42,7 @@ const sharedIconStyle = css`
     height: 24px;
     width: 24px;
 
-    color: #fff;
+    color: ${(props) => (props.activeMenu ? "#55B570" : "#fff")};
 `;
 
 export const InfoIcon = styled(Info)`
