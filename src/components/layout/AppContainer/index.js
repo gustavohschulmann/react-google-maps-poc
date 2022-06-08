@@ -10,7 +10,7 @@ const AppContainer = () => {
 
     return (
         <Container>
-            {menuOpen && <CollapsibleMenu />}
+            <CollapsibleMenu menuOpen={menuOpen} />
             <MenuCollapseButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Map />
         </Container>

@@ -1,6 +1,6 @@
 # MYP POC Project - Dev React
 
-This project was built by Gustavo Schulmann.
+This project was built by Gustavo for the react case study for MapYourProperty dev frontend position.
 
 ## To Install Dependencies
 
