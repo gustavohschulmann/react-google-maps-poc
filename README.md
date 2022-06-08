@@ -24,6 +24,10 @@ I could not find the arrow on phosphoricons for the collapse menu
 
 On the conditional render of the collapsible menu content I used string to specify what menu to display, I know that for best practices, I could use a different approach, but I had just a few experience before with redux, so I didn`t had much time to dive in this time and find a better solution, on real life software I would be more cautious to be sure it's a good way :)
 
+I could not find fastly how to rotate the arrow of the collapse on the legends, so I just kept moving forward and manteined the default icon position there is.
+
+On some cases I could create more generic components for typography, since on some parts of the menu the fontsizes change, but for this small case I thought it was not really necessary and kept going with styling on css with other props.
+
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 ### Deployment
