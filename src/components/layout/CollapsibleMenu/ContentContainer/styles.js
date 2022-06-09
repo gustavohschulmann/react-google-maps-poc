@@ -29,6 +29,8 @@ export const SearchBarContainer = styled.div`
 export const MenuContentContainer = styled.div`
     grid-area: MENUCONTENTCONTAINER;
 
+    max-height: 694px;
+
     display: flex;
 
     justify-content: center;

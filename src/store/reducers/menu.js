@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-    activeMenu: "HOME",
+    activeMenu: "CLIPBOARDTEXT",
 };
 
 export default function menu(state = INITIAL_STATE, action) {

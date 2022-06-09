@@ -24,7 +24,9 @@ export const OverflowContainer = styled.div`
     gap: 15px;
 
     overflow-y: visible;
-    overflow-x: auto;
+    overflow-x: hidden;
+
+    scrollbar-color: red;
 `;
 
 export const StyledTitle = styled(Title)`
