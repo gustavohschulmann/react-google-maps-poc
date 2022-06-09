@@ -94,7 +94,7 @@ export const LegendItemContainer = styled.div`
     max-width: 100%;
     display: flex;
 
-    flex: 1 0 40%; /* explanation below */
+    flex: 1 0 40%;
     margin: 2px;
 
     flex-direction: row;
