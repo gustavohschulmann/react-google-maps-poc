@@ -22,7 +22,7 @@ const AppContainer = () => {
             </AvatarDivContainer>
             <MYPAvatarDivContainer>
                 <MYPAvatarContainer>
-                    <a href="https://www.mapyourproperty.com">
+                    <a href="https://www.mapyourproperty.com" target="_blank">
                         <StyledMYPAvatar src={mypLogo} />
                     </a>
                 </MYPAvatarContainer>
