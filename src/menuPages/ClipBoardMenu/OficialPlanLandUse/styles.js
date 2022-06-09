@@ -52,22 +52,6 @@ export const MapPolicyContainer = styled.div`
     width: 100%;
 `;
 
-export const StyledLinkSubTitle = styled(Title)`
-    margin-left: 5px;
-    margin-top: 5px;
-    text-decoration: underline;
-
-    &.ant-typography {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    &:hover {
-        cursor: pointer;
-    }
-`;
-
 export const StyledMapIcon = styled(MapTrifold)`
     height: 25px;
     width: 25px;

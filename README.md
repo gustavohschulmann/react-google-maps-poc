@@ -26,7 +26,7 @@ On the conditional render of the collapsible menu content I used string to speci
 
 I could not find fastly how to rotate the arrow of the collapse on the legends, so I just kept moving forward and manteined the default icon position there is.
 
-On some cases I could create more generic components for typography, since on some parts of the menu the fontsizes change, but for this small case I thought it was not really necessary and kept going with styling on css with other props.
+I identified 4 generic components that repeat on the wireframes you passed me, the ones that I called LegendCollapse, TitleBarWithSwitch, CircleTitle and IconTextLink, respectivaly. On some cases I would create more generic components for typography, since on some parts of the menu the fontsizes change, but for this small case I thought it was not really necessary and kept going with styling directly on css alon with other props.
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 

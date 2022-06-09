@@ -1,27 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import TitleBarWithSwitch from "../../components/ui/TitleBarWithSwitch";
 import OfficialPlanLandUse from "./OficialPlanLandUse";
+import SecondaryPlan from "./SecondaryPlan";
 
-import { Container, SwitchContainer, StyledTitle, StyledSwitchTitle, StyledQuestionIcon, StyledSwitchTitleContainer, StyledSwitch } from "./styles";
+import { Container, StyledTitle } from "./styles";
 
 const ClipboardMenu = () => {
+    const [openOPL, setOpenOPL] = useState(true);
+    const [openSP, setOpenSP] = useState(true);
+
     return (
         <Container>
             <StyledTitle>Official Plan</StyledTitle>
-            <SwitchContainer>
-                <StyledSwitchTitleContainer>
-                    <StyledSwitchTitle>Official Plan Land Use</StyledSwitchTitle>
-                    <StyledQuestionIcon />
-                </StyledSwitchTitleContainer>
-                <StyledSwitch size="small" defaultChecked />
-            </SwitchContainer>
-            <OfficialPlanLandUse />
-            <SwitchContainer>
-                <StyledSwitchTitleContainer>
-                    <StyledSwitchTitle>Secondary Plan</StyledSwitchTitle>
-                    <StyledQuestionIcon />
-                </StyledSwitchTitleContainer>
-                <StyledSwitch size="small" defaultChecked />
-            </SwitchContainer>
+            <TitleBarWithSwitch title="Official Plan Land Use" onSwitchChange={() => setOpenOPL(!openOPL)} />
+            {openOPL && <OfficialPlanLandUse />}
+            <TitleBarWithSwitch title="Secondary Plan" onSwitchChange={() => setOpenSP(!openSP)} />
+            {openSP && <SecondaryPlan />}
         </Container>
     );
 };

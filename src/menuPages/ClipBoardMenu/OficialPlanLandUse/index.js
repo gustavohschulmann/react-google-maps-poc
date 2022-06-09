@@ -1,14 +1,14 @@
 import React from "react";
+import CircleTitle from "../../../components/ui/CircleTitle";
+import IconTextLink from "../../../components/ui/IconTextLink";
 
 import {
     Container,
     MixedUseAreaContainer,
-    RedCircle,
     StyledSubTitle,
     MapPolicyContainer,
     StyledMapIcon,
     StyledBookIcon,
-    StyledLinkSubTitle,
     StyledCollapse,
     StyledPanel,
     StyledSquare,
@@ -33,17 +33,18 @@ const OfficialPlanLandUse = () => {
     return (
         <Container>
             <MixedUseAreaContainer>
-                <RedCircle />
-                <StyledSubTitle>Mixed Use Area:</StyledSubTitle>
+                <CircleTitle text="Mixed Use Area:" color="#cc526c" />
             </MixedUseAreaContainer>
             <MapPolicyContainer>
-                <StyledMapIcon />
-                <StyledLinkSubTitle>Map</StyledLinkSubTitle>
-                <StyledBookIcon />
-                <StyledLinkSubTitle>Policy</StyledLinkSubTitle>
+                <IconTextLink text="Map">
+                    <StyledMapIcon />
+                </IconTextLink>
+                <IconTextLink text="Policy">
+                    <StyledBookIcon />
+                </IconTextLink>
             </MapPolicyContainer>
-            <StyledCollapse bordered={false} expandIconPosition="right">
-                <StyledPanel header="Legend">
+            <StyledCollapse bordered={false} expandIconPosition="right" defaultActiveKey={["1"]}>
+                <StyledPanel header="Legend:" key="1">
                     <LegendContainer>
                         {legends.map((legend) => {
                             return (
