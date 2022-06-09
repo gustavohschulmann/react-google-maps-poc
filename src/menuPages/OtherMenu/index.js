@@ -1,9 +1,14 @@
 import React from "react";
 
-import { Container } from "./styles";
+import { Container, StyledSmileyIcon, StyledSubTitle } from "./styles";
 
 const OtherMenu = () => {
-    return <Container>OTHERMENU</Container>;
+    return (
+        <Container>
+            <StyledSmileyIcon />
+            <StyledSubTitle>No Content Here!</StyledSubTitle>
+        </Container>
+    );
 };
 
 export default OtherMenu;
