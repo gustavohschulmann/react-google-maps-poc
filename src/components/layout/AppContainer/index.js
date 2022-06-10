@@ -17,9 +17,6 @@ const AppContainer = () => {
     const position = { lat: 43.650133147395024, lng: -79.37884909921873 };
 
     const onMapLoad = (map) => {
-        // map.mapTypeControlOptions = {
-        //     position: google.maps.ControlPosition.RIGHT_TOP,
-        // };
         setMap(map);
     };
 
@@ -57,7 +54,7 @@ const AppContainer = () => {
             </AvatarDivContainer>
             <MYPAvatarDivContainer>
                 <MYPAvatarContainer>
-                    <a href="https://www.mapyourproperty.com" target="_blank">
+                    <a href="https://www.mapyourproperty.com" target="_blank" rel="noreferrer">
                         <StyledMYPAvatar src={mypLogo} />
                     </a>
                 </MYPAvatarContainer>

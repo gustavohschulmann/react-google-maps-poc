@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, MenuButtonContainer, Button, ArrowLeft, ArrowRight } from "./styles";
+import { Container, Button, ArrowLeft, ArrowRight } from "./styles";
 
 const MenuCollapseButton = ({ menuOpen, setMenuOpen }) => {
     const handleOnClick = () => {

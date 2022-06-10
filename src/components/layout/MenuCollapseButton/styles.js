@@ -6,7 +6,7 @@ export const Container = styled.div`
     width: 25px;
     height: 36px;
 
-    margin-top: 65px;
+    margin-top: 15px;
     margin-left: ${(props) => (props.menuOpen ? "383px" : "0")};
 
     z-index: 10;
