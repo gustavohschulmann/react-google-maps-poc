@@ -1,6 +1,12 @@
-# MYP POC Project - Dev React
+# MYP POC Project - React Case Study
 
-This project was built by Gustavo for the react case study for MapYourProperty dev frontend position.
+This project was built by Gustavo for the MapYourProperty case study, for the frontend dev position.
+
+## Remote Access | Deployed
+
+I've deployed the project on a free webhost, you can checkout on the link below :)
+
+**https://stupendous-pony-0997eb.netlify.app/**
 
 ## To Install Dependencies
 
@@ -14,22 +20,43 @@ In the project directory, you can run:
 
 ### `npm start`
 
-## Comments
+## Key Feature and Components
 
-Firstly I thought about using react-router-dom to make the use of what button is selected or not then display the content on the menu, but since you want redux, and I think makes more sense for this POC, thats what I did.
+The project is composed basically of a sidebar, to navigate beetween contents in the collapsible menu, and an app container, where the map is. The collapsible menu is built inside the map, since it's necessary for the search to work with an customized input, such as the one required from you.
 
-On the menu collapse button, I was having a little bit of trouble to overlap the map component, so the position could stay absolute, what I did was to create a container to set the position to relative and then place the menu collapse button inside, and then import on the appcontainer, I know this is not the very best solution, since the menu button should be inside the collapsibleMenu component, but time was in a rush so I had to run! :)
+I separated the components as much as I could to make the most generic and reusable possible, most of the time of the development I was in a rush so on some more simple components, such as typography and icons, I simply repeated a few css code to prioritize the development speed and end result.
 
-I could not find the arrow on phosphoricons for the collapse menu
+The project is divided in 4 major UI/Functionallities folders:
 
-On the conditional render of the collapsible menu content I used string to specify what menu to display, I know that for best practices, I could use a different approach, but I had just a few experience before with redux, so I didn`t had much time to dive in this time and find a better solution, on real life software I would be more cautious to be sure it's a good way :)
+-   **components->layout:** Thats where all the layout of the application is set, all the necessary grid-area division, the mount of the main components, such as the SideBar, Google Maps, CollapsibleMenu and MenuCollapsibleButton.
 
-I could not find fastly how to rotate the arrow of the collapse on the legends, so I just kept moving forward and manteined the default icon position there is.
+-   **components->ui:** Thats where the generic components, that we use on all over the interface are built. I made them the most generic possible, as this is the purpouse of using React. Also on a prod solution I would go further, perhaps using Atomic Design to scale from microcomponents to pages, and would create, overtime, a library to have the most basic and reusable components of the solution, with the proper design.
 
-I identified 4 generic components that repeat on the wireframes you passed me, the ones that I called LegendCollapse, TitleBarWithSwitch, CircleTitle and IconTextLink, respectivaly. On some cases I would create more generic components for typography, since on some parts of the menu the fontsizes change, but for this small case I thought it was not really necessary and kept going with styling directly on css alon with other props.
+-   **menuPages:** Thats where all the the pages and content of the CollapsibleMenu is built, they change as the SideBar dispatch a state change using redux. The "menuPages" folder is where structurally the contents for each page are mounted.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-   **store:** Thats where all the redux structure is made, so the components SideBar can comunicate with the CollapsibleMenu to specify which menu is active.
 
-### Deployment
+**The project has the following outside libraries:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-   Styled-Components
+-   Redux and React-Redux
+-   React Google Maps Api
+-   AntDesign
+-   Phosphoricons
+
+### - Comments
+
+Firstly I thought about using the context API to make the use of what button is selected or not then display the content on the menu, but since you want redux, and I think makes more sense for this POC, thats what I did.
+
+I've never worked with Google Maps API before. So on the first time I planned and started developing the solution I didn't know that the CollapsibleMenu was supposed to be inside the GoogleMaps components for the Search to work. So I developed all the css structure and components outside the GoogleMaps components, then when I started working on the search, I faced maaaaany troubles. So in the last minute, after researching a lot I discovered it was supposed to be inside the Maps, then I started refactoring all the structural css, the code was burning on fire everywhere and not working, but then I fixed on time and now everything is fine and organized :)
+
+### - Small Details
+
+On the conditional render of the collapsible menu content I used string to specify what menu to display, I had just a few experience before with redux, so I didn`t had much time to dive in this time and find a better solution (if there is any better one), on real life software I would be more cautious to be sure it's a good way :)
+
+I could not find the arrow on phosphoricons for the collapse menu button.
+
+### - Contact
+
+You can contact me via email:
+gustavoschulmann@outlook.com
