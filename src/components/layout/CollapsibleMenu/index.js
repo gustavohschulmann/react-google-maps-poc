@@ -12,14 +12,7 @@ import { StandaloneSearchBox } from "@react-google-maps/api";
 const CollapsibleMenu = ({ activeMenu, markers, setMarkers, map, menuOpen }) => {
     const [searchBox, setSearchBox] = React.useState({});
 
-    // const onKeyDown = (event) => {
-    //     if (event.key === "Enter") {
-    //         toggleSearchText(event.target.value);
-    //     }
-    // };
-
     const onLoad = (ref) => {
-        console.log(ref);
         setSearchBox(ref);
     };
 
