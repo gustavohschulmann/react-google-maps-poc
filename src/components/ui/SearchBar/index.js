@@ -7,7 +7,7 @@ const SearchBar = () => {
     const [value, setValue] = useState("");
 
     const handleKeyDown = (event) => {
-        if (event.keyCode == 13) setValue("");
+        if (event.keyCode === 13) setValue("");
     };
 
     return (
