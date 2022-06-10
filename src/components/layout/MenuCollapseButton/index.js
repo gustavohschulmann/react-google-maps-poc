@@ -8,11 +8,9 @@ const MenuCollapseButton = ({ menuOpen, setMenuOpen }) => {
     };
 
     return (
-        <MenuButtonContainer>
-            <Container>
-                <Button onClick={handleOnClick}>{menuOpen ? <ArrowLeft /> : <ArrowRight />}</Button>
-            </Container>
-        </MenuButtonContainer>
+        <Container menuOpen={menuOpen}>
+            <Button onClick={handleOnClick}>{menuOpen ? <ArrowLeft /> : <ArrowRight />}</Button>
+        </Container>
     );
 };
 

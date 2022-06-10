@@ -7,16 +7,12 @@ export const Container = styled.div`
     height: 36px;
 
     margin-top: 65px;
+    margin-left: ${(props) => (props.menuOpen ? "383px" : "0")};
 
     z-index: 10;
     position: absolute;
 
     background-color: #40464a;
-`;
-
-export const MenuButtonContainer = styled.div`
-    display: flex;
-    position: relative;
 `;
 
 export const Button = styled.div`

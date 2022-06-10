@@ -17,8 +17,8 @@ export const AvatarDivContainer = styled.div`
 
 export const AvatarContainer = styled.div`
     position: absolute;
-    top: 10px;
-    right: 65px;
+    top: 65px;
+    right: 75px;
     display: flex;
     position: fixed;
 `;
