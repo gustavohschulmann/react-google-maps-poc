@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const Layout = styled.div`
     height: 100vh;
@@ -10,4 +10,10 @@ export const Layout = styled.div`
     grid-template-rows: auto;
 
     grid-template-areas: "SIDEBAR APPCONTAINER";
+`;
+
+export const GlobalStyle = createGlobalStyle`
+    body, html { 
+        font-family: 'Lato', sans-serif;
+    }
 `;
