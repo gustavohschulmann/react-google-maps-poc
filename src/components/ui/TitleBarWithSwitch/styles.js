@@ -50,5 +50,5 @@ export const StyledQuestionIcon = styled(Question)`
 export const StyledSwitch = styled(Switch)`
     margin-top: 15px;
     margin-right: 15px;
-    background-color: #55b570;
+    background-color: #0987b5;
 `;

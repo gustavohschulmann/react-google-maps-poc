@@ -24,13 +24,13 @@ export const AvatarContainer = styled.div`
 `;
 
 export const StyledAvatar = styled(Avatar)`
-    background-color: #1a8a3a;
+    background-color: #0987b5;
     height: 50px;
     width: 50px;
 
     &:hover {
         cursor: pointer;
-        background-color: #509163;
+        background-color: #369abf;
     }
 `;
 
@@ -56,7 +56,7 @@ export const MYPAvatarContainer = styled.div`
 `;
 
 export const StyledMYPAvatar = styled(Avatar)`
-    background-color: #1a8a3a;
+    background-color: #0987b5;
     height: 60px;
     width: 60px;
 

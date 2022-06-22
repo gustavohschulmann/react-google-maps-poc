@@ -4,7 +4,7 @@ import MenuCollapseButton from "../MenuCollapseButton";
 
 import { AvatarContainer, AvatarDivContainer, Container, MYPAvatarContainer, MYPAvatarDivContainer, StyledAvatar, StyledMYPAvatar, StyledUserIcon } from "./styles";
 
-import mypLogo from "../../../assets/img/MYPIcon.jpeg";
+import mypLogo from "../../../assets/img/logoFox.png";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const AppContainer = () => {

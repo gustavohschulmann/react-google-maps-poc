@@ -55,7 +55,7 @@ export const RadioContainer = styled.div`
 export const StyledRadio = styled(Radio)`
     color: #fff;
     .ant-radio-checked .ant-radio-inner:after {
-        background-color: #1a8a3a;
+        background-color: #0987b5;
     }
     .ant-radio-checked .ant-radio-inner {
         border-color: #0b4422 !important ;
