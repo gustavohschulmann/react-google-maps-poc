@@ -1,5 +1,11 @@
 # Google Maps POC Project - React Case Study
 
+## I've deployed this site, you can access on:
+
+**https://peppy-puppy-1885a5.netlify.app/**
+
+Note\*: If the API Key of google maps is not set with a real value, the maps will not work and seem a little broken.
+
 ## To Install Dependencies
 
 In the project directory, you can run:
