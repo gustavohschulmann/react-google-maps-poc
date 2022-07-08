@@ -14,7 +14,7 @@ export const StyledLinkSubTitle = styled(Title)`
     text-decoration: underline;
 
     &.ant-typography {
-        color: #fff;
+        color: #000;
         font-size: 14px;
         font-weight: 400;
     }

@@ -13,7 +13,7 @@ export const ColoredCircle = styled.div`
     height: 26px;
     border-radius: 100px;
     border: 1px solid white;
-    background-color: ${(props) => (props.color ? props.color : "#fff")};
+    background-color: ${(props) => (props.color ? props.color : "#000")};
 `;
 
 export const StyledSubTitle = styled(Title)`
@@ -21,7 +21,7 @@ export const StyledSubTitle = styled(Title)`
     margin-top: ${(props) => (props.mTop ? props.mTop : "5px")};
 
     &.ant-typography {
-        color: #fff;
+        color: #000;
         font-size: ${(props) => (props.fontSize ? props.fontSize : "14px")};
         font-weight: 400;
     }

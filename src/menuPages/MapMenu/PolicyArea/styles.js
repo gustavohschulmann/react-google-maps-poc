@@ -33,7 +33,7 @@ export const StyledMapIcon = styled(MapTrifold)`
     width: 25px;
 
     margin-top: 3px;
-    color: #fff;
+    color: #000;
 `;
 
 export const StyledBookIcon = styled(Book)`
@@ -42,5 +42,5 @@ export const StyledBookIcon = styled(Book)`
 
     margin-top: 3px;
     margin-left: 7px;
-    color: #fff;
+    color: #000;
 `;

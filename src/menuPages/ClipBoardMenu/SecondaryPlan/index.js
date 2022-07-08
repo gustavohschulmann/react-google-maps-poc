@@ -9,7 +9,7 @@ const SecondaryPlan = () => {
     return (
         <Container>
             <MixedUseAreaContainer>
-                <CircleTitle text="41 - Downtown Plan" color="#fff" />
+                <CircleTitle text="41 - Downtown Plan" color="#000" />
             </MixedUseAreaContainer>
             <MapPolicyContainer>
                 <IconTextLink text="Map">
@@ -20,7 +20,7 @@ const SecondaryPlan = () => {
                 </IconTextLink>
             </MapPolicyContainer>
             <MixedUseAreaContainer>
-                <CircleTitle text="39 King - Parliament" color="#fff" />
+                <CircleTitle text="39 King - Parliament" color="#000" />
             </MixedUseAreaContainer>
             <MapPolicyContainer>
                 <IconTextLink text="Map">

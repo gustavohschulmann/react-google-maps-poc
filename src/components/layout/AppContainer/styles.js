@@ -24,7 +24,7 @@ export const AvatarContainer = styled.div`
 `;
 
 export const StyledAvatar = styled(Avatar)`
-    background-color: #0987b5;
+    background-color: #cd5334;
     height: 50px;
     width: 50px;
 
@@ -39,7 +39,6 @@ export const StyledUserIcon = styled(User)`
     width: 30px;
 
     margin-top: 8px;
-    color: #fff;
 `;
 
 export const MYPAvatarDivContainer = styled.div`
@@ -56,7 +55,7 @@ export const MYPAvatarContainer = styled.div`
 `;
 
 export const StyledMYPAvatar = styled(Avatar)`
-    background-color: #0987b5;
+    background-color: #cd5334;
     height: 60px;
     width: 60px;
 

@@ -12,7 +12,7 @@ const AppContainer = () => {
 
     const [map, setMap] = React.useState({});
     const [markers, setMarkers] = React.useState([]);
-    const API_KEY = "AIzaSyBCMiPfX0U0h25UjL_SrzCuucy5AwzGQns";
+    const API_KEY = "dasdasdkajsdjkasdj";
 
     const position = { lat: 43.650133147395024, lng: -79.37884909921873 };
 

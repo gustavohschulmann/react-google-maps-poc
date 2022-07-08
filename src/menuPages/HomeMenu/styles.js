@@ -40,7 +40,7 @@ export const StyledTitle = styled(Title)`
     margin: 15px 0px 0px 24px;
 
     &.ant-typography {
-        color: #fff;
+        color: #000;
         font-size: 20px;
         font-weight: 400;
     }
@@ -53,9 +53,9 @@ export const RadioContainer = styled.div`
 `;
 
 export const StyledRadio = styled(Radio)`
-    color: #fff;
+    color: #000;
     .ant-radio-checked .ant-radio-inner:after {
-        background-color: #0987b5;
+        background-color: #cd5334;
     }
     .ant-radio-checked .ant-radio-inner {
         border-color: #0b4422 !important ;
@@ -65,7 +65,7 @@ export const StyledRadio = styled(Radio)`
 export const StyledHouseLineIcon = styled(HouseLine)`
     height: 25px;
     width: 25px;
-    color: #fff;
+    color: #000;
 `;
 
 export const StyledSubTitle = styled(Title)`
@@ -73,7 +73,7 @@ export const StyledSubTitle = styled(Title)`
     margin-top: 5px;
 
     &.ant-typography {
-        color: #fff;
+        color: #000;
         font-size: 16px;
         font-weight: 400;
     }

@@ -18,7 +18,7 @@ export const Container = styled.div`
     max-width: ${(props) => (props.menuOpen ? "383px" : "0")};
     height: 100%;
 
-    background-color: #40464a;
+    background-color: #e7ecef;
 
     z-index: 10;
 

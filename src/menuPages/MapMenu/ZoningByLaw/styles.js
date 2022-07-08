@@ -28,7 +28,7 @@ export const StyledTitle = styled(Title)`
     margin-left: 26px;
 
     &.ant-typography {
-        color: #fff;
+        color: #000;
         font-size: 16px;
         font-weight: 400;
     }
@@ -48,7 +48,7 @@ export const StyledBookmarIcon = styled(BookmarkSimple)`
     width: 25px;
 
     margin-top: 3px;
-    color: #fff;
+    color: #000;
 `;
 
 export const StyledBookOpenIcon = styled(BookOpen)`
@@ -56,7 +56,7 @@ export const StyledBookOpenIcon = styled(BookOpen)`
     width: 25px;
 
     margin-top: 3px;
-    color: #fff;
+    color: #000;
 `;
 
 export const StyledSquareFourIcon = styled(SquaresFour)`
@@ -64,5 +64,5 @@ export const StyledSquareFourIcon = styled(SquaresFour)`
     width: 25px;
 
     margin-top: 3px;
-    color: #fff;
+    color: #000;
 `;

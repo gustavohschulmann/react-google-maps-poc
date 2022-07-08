@@ -26,7 +26,7 @@ export const StyledTitle = styled(Title)`
     margin-left: 26px;
 
     &.ant-typography {
-        color: #fff;
+        color: #000;
         font-size: 16px;
         font-weight: 400;
     }
@@ -37,7 +37,7 @@ export const WhiteCircle = styled.div`
     height: 22px;
     border-radius: 100px;
     border: 1px solid black;
-    background-color: #fff;
+    background-color: #000;
 
     margin-top: 5px;
 `;
@@ -47,7 +47,7 @@ export const StyledMapIcon = styled(MapTrifold)`
     width: 25px;
 
     margin-top: 3px;
-    color: #fff;
+    color: #000;
 `;
 
 export const StyledBookIcon = styled(Book)`
@@ -56,5 +56,5 @@ export const StyledBookIcon = styled(Book)`
 
     margin-top: 3px;
     margin-left: 7px;
-    color: #fff;
+    color: #000;
 `;

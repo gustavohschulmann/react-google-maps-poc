@@ -7,7 +7,7 @@ const { Panel } = Collapse;
 export const StyledCollapse = styled(Collapse)`
     margin-top: 8px;
     .ant-collapse-header {
-        color: #fff !important;
+        color: #000 !important;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -15,6 +15,6 @@ export const StyledCollapse = styled(Collapse)`
 
 export const StyledPanel = styled(Panel)`
     &&& {
-        background-color: #40464a;
+        background-color: #e7ecef;
     }
 `;

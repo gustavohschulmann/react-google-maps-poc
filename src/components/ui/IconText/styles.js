@@ -13,7 +13,7 @@ export const StyledSubTitle = styled(Title)`
     margin-top: 5px;
 
     &.ant-typography {
-        color: #fff;
+        color: #000;
         font-size: 16px;
         font-weight: 400;
     }

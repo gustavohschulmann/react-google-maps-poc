@@ -36,7 +36,7 @@ export const RowItemContainer = styled.div`
 
 export const StyledSubTitle = styled(Title)`
     &.ant-typography {
-        color: #fff;
+        color: #000;
         font-size: 14px;
         font-weight: 400;
         margin-top: 0px !important;

@@ -19,7 +19,7 @@ export const Container = styled.div`
 export const StyledSubTitle = styled(Title)`
     margin-top: 25px;
     &.ant-typography {
-        color: #fff;
+        color: #000;
         font-size: 20px;
         font-weight: 400;
     }
@@ -28,5 +28,5 @@ export const StyledSubTitle = styled(Title)`
 export const StyledSmileyIcon = styled(Smiley)`
     height: 50px;
     width: 50px;
-    color: #fff;
+    color: #000;
 `;

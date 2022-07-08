@@ -9,7 +9,7 @@ const { Title } = Typography;
 export const SwitchContainer = styled.div`
     display: flex;
 
-    background-color: #6c7174;
+    background-color: #6096ba;
     align-content: center;
     justify-content: space-between;
 
@@ -50,5 +50,5 @@ export const StyledQuestionIcon = styled(Question)`
 export const StyledSwitch = styled(Switch)`
     margin-top: 15px;
     margin-right: 15px;
-    background-color: #0987b5;
+    background-color: #cd5334;
 `;

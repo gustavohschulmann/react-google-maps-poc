@@ -33,7 +33,7 @@ export const StyledTitle = styled(Title)`
     margin: 15px 0px 0px 24px;
 
     &.ant-typography {
-        color: #fff;
+        color: #000;
         font-size: 20px;
         font-weight: 400;
     }

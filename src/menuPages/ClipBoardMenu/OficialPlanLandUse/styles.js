@@ -39,7 +39,7 @@ export const StyledSubTitle = styled(Title)`
     margin-top: ${(props) => (props.mTop ? props.mTop : "5px")};
 
     &.ant-typography {
-        color: #fff;
+        color: #000;
         font-size: ${(props) => (props.fontSize ? props.fontSize : "14px")};
         font-weight: 400;
     }
@@ -57,7 +57,7 @@ export const StyledMapIcon = styled(MapTrifold)`
     width: 25px;
 
     margin-top: 3px;
-    color: #fff;
+    color: #000;
 `;
 
 export const StyledBookIcon = styled(Book)`
@@ -66,13 +66,13 @@ export const StyledBookIcon = styled(Book)`
 
     margin-top: 3px;
     margin-left: 7px;
-    color: #fff;
+    color: #000;
 `;
 
 export const StyledCollapse = styled(Collapse)`
     margin-top: 8px;
     .ant-collapse-header {
-        color: #fff !important;
+        color: #000 !important;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -80,7 +80,7 @@ export const StyledCollapse = styled(Collapse)`
 
 export const StyledPanel = styled(Panel)`
     &&& {
-        background-color: #40464a;
+        background-color: #e7ecef;
     }
 `;
 
@@ -105,5 +105,5 @@ export const StyledSquare = styled.div`
 
     width: 12px;
     height: 12px;
-    background-color: ${(props) => (props.color ? props.color : "#fff")};
+    background-color: ${(props) => (props.color ? props.color : "#000")};
 `;

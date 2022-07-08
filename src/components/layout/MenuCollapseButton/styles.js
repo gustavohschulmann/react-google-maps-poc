@@ -12,7 +12,7 @@ export const Container = styled.div`
     z-index: 10;
     position: absolute;
 
-    background-color: #40464a;
+    background-color: #274c77;
 `;
 
 export const Button = styled.div`
@@ -24,7 +24,7 @@ export const Button = styled.div`
     justify-content: center;
 
     &:hover {
-        background-color: #54585c;
+        background-color: #45658a;
         cursor: pointer;
     }
 `;
@@ -32,13 +32,11 @@ export const Button = styled.div`
 export const ArrowLeft = styled(CaretLeft)`
     height: 20px;
     width: 20px;
-
     color: #fff;
 `;
 
 export const ArrowRight = styled(CaretRight)`
     height: 20px;
     width: 20px;
-
     color: #fff;
 `;

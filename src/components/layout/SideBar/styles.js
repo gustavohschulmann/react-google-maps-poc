@@ -9,7 +9,7 @@ export const Container = styled.ul`
     padding: 8px;
 
     z-index: 12;
-    background: #2f3436;
+    background: #274c77;
 
     overflow: hidden;
 
@@ -33,7 +33,7 @@ export const SideBarButton = styled.li`
     }
 
     &:hover {
-        background-color: #54585c;
+        background-color: #45658a;
         cursor: pointer;
     }
 `;
@@ -42,7 +42,7 @@ const sharedIconStyle = css`
     height: 24px;
     width: 24px;
 
-    color: ${(props) => (props.activeMenu ? "#0987b5" : "#fff")};
+    color: ${(props) => (props.activeMenu ? "#CD5334" : "#fff")};
 `;
 
 export const InfoIcon = styled(Info)`
